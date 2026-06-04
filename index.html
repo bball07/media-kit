@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brittney Ball | Media Kit 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal:       #006D77;
+    --teal-light: #E8F4F5;
+    --teal-mid:   #3a9aa5;
+    --gold:       #C9A84C;
+    --gold-light: #FBF5E6;
+    --black:      #0D0D0D;
+    --white:      #FFFFFF;
+    --gray:       #6B7280;
+    --gray-light: #F3F4F6;
+    --rule:       #D1D5DB;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .page { width: 850px; margin: 0 auto; background: var(--white); }
+
+  /* HEADER */
+  .header {
+    background: var(--teal);
+    padding: 32px 56px 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: end;
+  }
+  .header-left h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    color: var(--white);
+    line-height: 1.05;
+    letter-spacing: -1px;
+  }
+  .header-left h1 em { font-style: italic; color: #A8D8DC; }
+  .header-left .tagline {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #A8D8DC;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .header-right { text-align: right; }
+  .kit-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 6px;
+  }
+  .header-right .date { font-size: 12px; color: #A8D8DC; }
+
+  /* CONTACT BAR */
+  .contact-bar {
+    background: var(--black);
+    padding: 11px 56px;
+    display: flex; gap: 24px; align-items: center; flex-wrap: wrap;
+  }
+  .contact-bar a, .contact-bar span {
+    font-size: 11.5px; color: #A8D8DC; text-decoration: none; font-weight: 400;
+  }
+  .contact-bar a:hover { color: var(--gold); }
+  .contact-sep { color: #444; }
+
+  /* BODY */
+  .body {
+    padding: 24px 56px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 40px;
+  }
+  .full-width { grid-column: 1 / -1; }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--teal);
+    margin-bottom: 10px; padding-bottom: 5px;
+    border-bottom: 2px solid var(--teal); display: block;
+  }
+
+  /* BIO */
+  .bio p { font-size: 12.5px; line-height: 1.65; color: #1a1a1a; }
+  .bio p + p { margin-top: 7px; }
+
+  /* AUDIENCE VALUE STATEMENT */
+  .value-statement {
+    background: var(--black);
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 14px;
+  }
+  .value-statement .vs-label {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 5px;
+  }
+  .value-statement p {
+    font-size: 12.5px; color: var(--white); line-height: 1.6;
+  }
+  .value-statement strong { color: var(--gold); }
+
+  /* REACH HEADLINE */
+  .reach-headline {
+    background: var(--teal);
+    border-radius: 8px;
+    padding: 14px 20px;
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .total-label {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #A8D8DC; margin-bottom: 2px;
+  }
+  .total-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px; color: var(--white); line-height: 1;
+  }
+  .total-sub { font-size: 11px; color: #A8D8DC; margin-top: 2px; }
+  .reach-pills { display: flex; flex-direction: column; gap: 5px; align-items: flex-end; }
+  .reach-pill {
+    background: rgba(255,255,255,0.12); border-radius: 20px;
+    padding: 3px 12px; font-size: 11px; color: var(--white); font-weight: 500;
+  }
+  .reach-pill.gold {
+    background: rgba(201,168,76,0.2);
+    border: 1px solid var(--gold);
+    color: var(--gold); font-weight: 600; font-size: 11.5px;
+  }
+
+  /* PLATFORM GRID */
+  .platform-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+  }
+  .platform-card {
+    background: var(--gray-light); border-radius: 8px;
+    padding: 10px 8px; text-align: center; border-top: 3px solid var(--teal);
+  }
+  .platform-card.featured {
+    border-top: 3px solid var(--gold); background: var(--gold-light);
+  }
+  .p-name {
+    font-size: 9.5px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gray); margin-bottom: 4px;
+  }
+  .platform-card.featured .p-name { color: #a07c28; }
+  .p-num {
+    font-family: 'DM Serif Display', serif; font-size: 19px;
+    color: var(--teal); line-height: 1;
+  }
+  .platform-card.featured .p-num { color: var(--black); }
+  .p-handle { font-size: 9.5px; color: var(--gray); margin-top: 2px; }
+  .p-views { font-size: 9.5px; font-weight: 600; color: var(--teal); margin-top: 3px; }
+  .p-eng { font-size: 9.5px; color: var(--gray); margin-top: 2px; }
+
+  /* ENGAGEMENT ROW */
+  .engagement-row {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px;
+  }
+  .eng-card {
+    border: 1.5px solid var(--rule); border-radius: 8px; padding: 10px 12px;
+  }
+  .eng-card.featured { border: 1.5px solid var(--gold); background: var(--gold-light); }
+  .e-label {
+    font-size: 9.5px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--gray); margin-bottom: 2px;
+  }
+  .eng-card.featured .e-label { color: #a07c28; }
+  .e-num {
+    font-family: 'DM Serif Display', serif; font-size: 22px;
+    color: var(--black); line-height: 1;
+  }
+  .e-sub { font-size: 10.5px; color: var(--teal); font-weight: 500; margin-top: 2px; }
+
+  /* TOP POSTS */
+  .top-posts { display: flex; flex-direction: column; gap: 8px; }
+  .post-card {
+    border: 1px solid var(--rule); border-radius: 8px;
+    padding: 10px 14px;
+    display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: center;
+  }
+  .post-card.viral { border-color: var(--gold); background: var(--gold-light); }
+  .post-text { font-size: 11.5px; color: #1a1a1a; line-height: 1.45; }
+  .post-text .platform-tag {
+    display: inline-block; font-size: 9px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--teal); background: var(--teal-light);
+    padding: 2px 7px; border-radius: 10px; margin-bottom: 4px;
+  }
+  .post-card.viral .platform-tag { color: #a07c28; background: #f5e8c8; }
+  .post-stats { text-align: right; white-space: nowrap; }
+  .post-stats .stat-num {
+    font-family: 'DM Serif Display', serif; font-size: 20px;
+    color: var(--teal); line-height: 1; display: block;
+  }
+  .post-card.viral .stat-num { color: var(--black); }
+  .post-stats .stat-label { font-size: 10px; color: var(--gray); }
+  .post-stats .stat-secondary {
+    font-size: 10px; color: var(--gray); margin-top: 2px;
+  }
+
+  /* WHY THIS AUDIENCE */
+  .why-box {
+    background: var(--teal-light);
+    border-left: 4px solid var(--teal);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+  }
+  .why-box .why-label {
+    font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--teal); margin-bottom: 6px;
+  }
+  .why-box ul { list-style: none; }
+  .why-box ul li {
+    font-size: 12px; color: #1a1a1a; padding: 3px 0;
+    display: flex; gap: 9px; align-items: flex-start;
+  }
+  .why-dot {
+    width: 5px; height: 5px; background: var(--teal);
+    border-radius: 50%; flex-shrink: 0; margin-top: 6px;
+  }
+
+  /* DEMO GRID */
+  .demo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .demo-card {
+    text-align: center; padding: 11px 10px;
+    background: var(--gray-light); border-radius: 8px;
+  }
+  .d-pct {
+    font-family: 'DM Serif Display', serif; font-size: 26px;
+    color: var(--teal); line-height: 1;
+  }
+  .d-label { font-size: 10.5px; color: var(--gray); margin-top: 3px; line-height: 1.4; }
+
+  /* TOPICS */
+  .topic-list { display: flex; flex-wrap: wrap; gap: 6px; }
+  .topic-tag {
+    background: var(--teal-light); color: var(--teal); font-size: 11px;
+    font-weight: 500; padding: 3px 11px; border-radius: 20px;
+    border: 1px solid #b2d8dc;
+  }
+
+  /* CREDENTIALS */
+  .cred-list { list-style: none; }
+  .cred-list li {
+    padding: 5px 0; border-bottom: 1px solid var(--rule);
+    font-size: 12px; display: flex; align-items: flex-start; gap: 9px;
+  }
+  .cred-list li:last-child { border-bottom: none; }
+  .cred-dot {
+    width: 6px; height: 6px; background: var(--gold);
+    border-radius: 50%; flex-shrink: 0; margin-top: 5px;
+  }
+
+  /* SERVICES */
+  .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+  .service-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 12px; background: var(--gold-light); border-radius: 6px;
+    border-left: 3px solid var(--gold);
+  }
+  .s-name { font-size: 11.5px; font-weight: 500; color: var(--black); }
+  .s-rate { font-family: 'DM Serif Display', serif; font-size: 14px; color: var(--teal); }
+
+  /* SOCIAL PROOF */
+  .proof-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .proof-card {
+    background: var(--gray-light); border-radius: 8px;
+    padding: 13px 15px; border-top: 3px solid var(--teal);
+  }
+  .proof-quote {
+    font-size: 12px; color: #1a1a1a; line-height: 1.6;
+    font-style: italic; margin-bottom: 8px;
+  }
+  .proof-source { font-size: 10.5px; font-weight: 600; color: var(--teal); }
+  .proof-source span { color: var(--gray); font-weight: 400; }
+
+  /* NEWSLETTER CALLOUT */
+  .newsletter-callout {
+    background: linear-gradient(135deg, var(--teal) 0%, #004d55 100%);
+    border-radius: 10px; padding: 18px 22px;
+    display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center;
+  }
+  .newsletter-callout h3 {
+    font-family: 'DM Serif Display', serif; font-size: 18px;
+    color: var(--white); margin-bottom: 3px;
+  }
+  .newsletter-callout p { font-size: 12px; color: #A8D8DC; line-height: 1.6; }
+  .nl-stats { display: flex; flex-direction: column; gap: 8px; text-align: right; }
+  .nl-num { font-family: 'DM Serif Display', serif; font-size: 22px; color: var(--white); line-height: 1; }
+  .nl-label { font-size: 10px; color: #A8D8DC; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  /* FOOTER */
+  .footer {
+    background: var(--black); padding: 18px 56px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .f-name { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--white); }
+  .f-contact { font-size: 11px; color: #A8D8DC; text-align: right; line-height: 1.9; }
+  .f-contact a { color: var(--gold); text-decoration: none; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="tagline">Content Creator &nbsp;·&nbsp; AI Documentation Strategist &nbsp;·&nbsp; Tech Founder</div>
+      <h1>Brittney <em>Ball</em></h1>
+    </div>
+    <div class="header-right">
+      <div class="kit-label">Media Kit</div>
+      <div class="date">June 2026</div>
+    </div>
+  </div>
+
+  <!-- CONTACT BAR -->
+  <div class="contact-bar">
+    <a href="mailto:brittneyball.deved@gmail.com">brittneyball.deved@gmail.com</a>
+    <span class="contact-sep">|</span>
+    <a href="https://briitoeknee.substack.com">briitoeknee.substack.com</a>
+    <span class="contact-sep">|</span>
+    <a href="https://technidox.dev">technidox.dev</a>
+    <span class="contact-sep">|</span>
+    <span>@Brii_toe_knee · all platforms</span>
+  </div>
+
+  <div class="body">
+
+    <!-- BIO -->
+    <div class="bio full-width">
+      <span class="section-label">About</span>
+      <p>Brittney Ball is a content creator, AI ethics strategist, and tech founder who has spent her career at the intersection of documentation infrastructure, AI governance, and developer education. She publishes three times weekly across eight platforms, building one of the most distinctive voices in the AI ethics space: direct, research-driven, and unapologetically practical. Her content spans original frameworks for AI documentation compliance, founder journey transparency, and the governance conversations that most tech companies are not yet having publicly.</p>
+      <p>Her expertise is grounded in years of experience at Meta, where she worked at the heart of one of the world's largest developer ecosystems as a documentation engineer, advising on documentation strategy, technical communication, and community engagement at scale. That experience gave her a ground-level understanding of how technical knowledge travels, where explanation gaps cause real harm, and what it takes to build trust between a platform and the people who depend on it. She left Meta and channeled that institutional knowledge into TechniDox, a product she built from her own thesis and brought to acquisition.</p>
+      <p>As the author of <em>The Documentation Engineer</em> newsletter and the creator of the AI Documentation Ethics Benchmark (ADECP), Brittney has established herself as a practitioner-researcher in a field that sits at the center of the 2026 regulatory moment. She has spoken at 30+ conferences, appeared on 15+ podcasts, been featured in Business Insider, and built frameworks that documentation teams, compliance leads, and AI governance professionals are actively using ahead of EU AI Act enforcement this August.</p>
+      <p>The community she has built reflects the breadth of that influence. Her 34,500+ cross-platform following is a mix of academics researching AI ethics, senior tech leaders and executives, founders building AI-native companies, DevRel and documentation professionals, and policy-adjacent technologists tracking the regulatory landscape. This is not a general tech audience. It is a concentrated community of people who shape how AI is built, explained, governed, and trusted, and who treat Brittney's analysis as a credible, independent signal in a noisy space.</p>
+    </div>
+
+    <!-- AUDIENCE & REACH: full width -->
+    <div class="full-width">
+      <span class="section-label">Audience &amp; Reach</span>
+
+      <!-- Audience value statement -->
+      <div class="value-statement">
+        <div class="vs-label">Why This Audience Matters to Your Brand</div>
+        <p>Brittney's audience is not general tech. It is <strong>the people who decide what tools their companies buy.</strong> Documentation engineers, DevRel leaders, founders, and CTOs make up her core readership: professionals with purchasing authority, budget control, and outsized influence over tooling decisions at their organizations. A recommendation from Brittney reaches the people who greenlight software budgets, champion new platforms internally, and set documentation and compliance standards for entire engineering teams. This is a high-trust, high-intent audience that acts on what they read.</p>
+      </div>
+
+      <!-- Reach headline -->
+      <div class="reach-headline">
+        <div>
+          <div class="total-label">Total Cross-Platform Reach</div>
+          <div class="total-num">34,510+</div>
+          <div class="total-sub">Across 8 platforms &nbsp;·&nbsp; Subscribers in 36 countries</div>
+        </div>
+        <div class="reach-pills">
+          <div class="reach-pill gold">🔥 898K Threads views / 30 days</div>
+          <div class="reach-pill">87K LinkedIn impressions / 7 days</div>
+          <div class="reach-pill">41.1K Threads interactions / 30 days</div>
+        </div>
+      </div>
+
+      <!-- Platform cards -->
+      <div class="platform-grid">
+        <div class="platform-card">
+          <div class="p-name">X / Twitter</div>
+          <div class="p-num">10.1K</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+          <div class="p-eng">1,943 posts</div>
+        </div>
+        <div class="platform-card">
+          <div class="p-name">LinkedIn</div>
+          <div class="p-num">7,302</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+          <div class="p-eng">49.6% impression growth</div>
+        </div>
+        <div class="platform-card">
+          <div class="p-name">Bluesky</div>
+          <div class="p-num">7,995</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+        </div>
+        <div class="platform-card">
+          <div class="p-name">Instagram</div>
+          <div class="p-num">3,801</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+          <div class="p-eng">2,389 posts</div>
+        </div>
+        <div class="platform-card featured">
+          <div class="p-name">Threads</div>
+          <div class="p-num">1,291</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+          <div class="p-views">898K views / 30 days</div>
+          <div class="p-eng">41.1K interactions</div>
+        </div>
+        <div class="platform-card">
+          <div class="p-name">TikTok</div>
+          <div class="p-num">3,419</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+          <div class="p-eng">12.7K likes</div>
+        </div>
+        <div class="platform-card">
+          <div class="p-name">YouTube</div>
+          <div class="p-num">163</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+          <div class="p-eng">24 videos</div>
+        </div>
+        <div class="platform-card">
+          <div class="p-name">Substack</div>
+          <div class="p-num">455</div>
+          <div class="p-handle">@Brii_toe_knee</div>
+          <div class="p-eng">717 followers</div>
+        </div>
+      </div>
+
+      <!-- Engagement row -->
+      <div class="engagement-row">
+        <div class="eng-card featured">
+          <div class="e-label">Threads Views</div>
+          <div class="e-num">898K</div>
+          <div class="e-sub">Last 30 days</div>
+        </div>
+        <div class="eng-card">
+          <div class="e-label">LinkedIn Impressions</div>
+          <div class="e-num">87,452</div>
+          <div class="e-sub">↑ 49.6% week over week</div>
+        </div>
+        <div class="eng-card">
+          <div class="e-label">LinkedIn Profile Views</div>
+          <div class="e-num">6,081</div>
+          <div class="e-sub">↑ 88.8% in 90 days</div>
+        </div>
+        <div class="eng-card">
+          <div class="e-label">Newsletter Growth</div>
+          <div class="e-num">11,275%</div>
+          <div class="e-sub">Over 180 days from baseline</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOP PERFORMING CONTENT -->
+    <div class="full-width">
+      <span class="section-label">Top Performing Content</span>
+      <div class="top-posts">
+        <div class="post-card viral">
+          <div class="post-text">
+            <span class="platform-tag">Threads · Viral</span><br>
+            "Pope Leo XIV just published an encyclical on artificial intelligence. Not a statement. An encyclical, the Catholic Church's highest form of teaching document..."
+          </div>
+          <div class="post-stats">
+            <span class="stat-num">451K</span>
+            <div class="stat-label">Views</div>
+            <div class="stat-secondary">18.8K likes &nbsp;·&nbsp; 416 comments</div>
+          </div>
+        </div>
+        <div class="post-card">
+          <div class="post-text">
+            <span class="platform-tag">Threads</span><br>
+            "On Monday, Google introduced a new AI model tier, renamed an existing one, and reset user quotas. Users found out from a tech..."
+          </div>
+          <div class="post-stats">
+            <span class="stat-num">9.9K</span>
+            <div class="stat-label">Views</div>
+            <div class="stat-secondary">141 likes &nbsp;·&nbsp; 3 comments</div>
+          </div>
+        </div>
+        <div class="post-card">
+          <div class="post-text">
+            <span class="platform-tag">Threads</span><br>
+            "A PM used GPT-5.5 to draft a customer email last week. The AI hallucinated a product feature. The email went to 3,000 people..."
+          </div>
+          <div class="post-stats">
+            <span class="stat-num">7K</span>
+            <div class="stat-label">Views</div>
+            <div class="stat-secondary">54 likes &nbsp;·&nbsp; 15 comments</div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray);margin-top:10px;">The 451K-view post demonstrates content that reaches well beyond the existing follower base, the primary driver of brand value in a partnership.</p>
+    </div>
+
+    <!-- WHY THIS AUDIENCE + DEMOGRAPHICS + TOPICS merged to eliminate whitespace -->
+    <div>
+      <span class="section-label">Audience Profile</span>
+      <div class="why-box">
+        <div class="why-label">Decision-Maker Reach</div>
+        <ul>
+          <li><span class="why-dot"></span>Documentation engineers and DevRel professionals who evaluate and champion new tools</li>
+          <li><span class="why-dot"></span>Founders and CTOs who control software and infrastructure budgets</li>
+          <li><span class="why-dot"></span>Career-shifters leveling into technical roles, actively building their toolkits</li>
+          <li><span class="why-dot"></span>AI compliance leads preparing for EU AI Act and U.S. state regulation deadlines</li>
+          <li><span class="why-dot"></span>Practitioners in 36 countries with immediate need for AI documentation tools</li>
+        </ul>
+      </div>
+      <div class="demo-grid">
+        <div class="demo-card">
+          <div class="d-pct">36</div>
+          <div class="d-label">Countries in newsletter subscriber base</div>
+        </div>
+        <div class="demo-card">
+          <div class="d-pct">35</div>
+          <div class="d-label">U.S. states represented</div>
+        </div>
+        <div class="demo-card">
+          <div class="d-pct">Tech</div>
+          <div class="d-label">Primary industry: AI, SaaS, developer tools</div>
+        </div>
+      </div>
+      <span class="section-label" style="margin-top:18px;">Content Topics</span>
+      <div class="topic-list">
+        <span class="topic-tag">AI Ethics &amp; Governance</span>
+        <span class="topic-tag">AI Documentation</span>
+        <span class="topic-tag">Developer Education</span>
+        <span class="topic-tag">Tech Founder Journey</span>
+        <span class="topic-tag">Personal Brand Building</span>
+        <span class="topic-tag">Black Women in Tech</span>
+        <span class="topic-tag">Full-Time Creator Transition</span>
+        <span class="topic-tag">EU AI Act Compliance</span>
+        <span class="topic-tag">Developer Experience</span>
+        <span class="topic-tag">Startup Building &amp; Acquisition</span>
+        <span class="topic-tag">AI Tooling &amp; Infrastructure</span>
+      </div>
+    </div>
+      <div class="proof-grid">
+        <div class="proof-card">
+          <div class="proof-quote">"The way you frame documentation as an ethical practice helps shift the focus from just technical checklists to real-world impact and responsibility. Your insights are moving the field forward in a meaningful way."</div>
+          <div class="proof-source">Wallace Merriman <span>· Substack Reader</span></div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-quote">"Brittney is a fantastic team member and community builder. She is one of the rare people who has a strong sense for both technical and organizational matters. She led major cross-team initiatives at Meta and communicated extremely well with teammates and stakeholders."</div>
+          <div class="proof-source">John Wojciechowski <span>· Information Solutions Engineer, Meta</span></div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-quote">"Brittney has a passion and talent for developer advocacy and inclusive technical communication. She shows excellent leadership, communication, independence, sincere care, and a keen curiosity."</div>
+          <div class="proof-source">Ted Prodromou <span>· Information Solutions Manager, Meta</span></div>
+        </div>
+        <div class="proof-card">
+          <div class="proof-quote">"Thank you again for sharing your wisdom on this platform. I'm all over this!"</div>
+          <div class="proof-source">Michael Stagg <span>· Executive &amp; Career Transition Coach, LinkedIn</span></div>
+        </div>
+        <div class="proof-card" style="background:var(--teal);border-top:3px solid var(--gold);grid-column:1/-1;">
+          <div class="proof-quote" style="color:#A8D8DC;">"Go Brittney! AI ethics is a timely topic for these uncharted times. Keep showing up, keep teaching and keep inspiring us."</div>
+          <div class="proof-source" style="color:var(--gold);">Andrea Breaux <span style="color:#A8D8DC;">· Substack Reader</span></div>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray);margin-top:10px;">Full testimonials available on request. Past speaking engagements and partnerships available upon inquiry.</p>
+    </div>
+
+    <!-- CREDENTIALS -->
+    <div>
+      <span class="section-label">Credentials</span>
+      <ul class="cred-list">
+        <li><span class="cred-dot"></span>Former Meta Documentation Engineer, developer ecosystem</li>
+        <li><span class="cred-dot"></span>Founder of TechniDox, AI documentation infrastructure product</li>
+        <li><span class="cred-dot"></span>Author, <em>The Documentation Engineer</em> newsletter</li>
+        <li><span class="cred-dot"></span>Featured in Business Insider</li>
+        <li><span class="cred-dot"></span>30+ conference speaking appearances</li>
+        <li><span class="cred-dot"></span>15+ podcast appearances</li>
+        <li><span class="cred-dot"></span>Creator of the ADECP AI Documentation Ethics Benchmark</li>
+      </ul>
+    </div>
+
+    <!-- PARTNERSHIP OPPORTUNITIES -->
+    <div class="full-width">
+      <span class="section-label">Partnership Opportunities</span>
+      <div class="services-grid">
+        <div class="service-row">
+          <span class="s-name">Sponsored Newsletter Issue</span>
+          <span class="s-rate">$500–$1,200</span>
+        </div>
+        <div class="service-row">
+          <span class="s-name">Dedicated Email Blast</span>
+          <span class="s-rate">$750–$1,500</span>
+        </div>
+        <div class="service-row">
+          <span class="s-name">Social Media Campaign</span>
+          <span class="s-rate">$800–$2,000</span>
+        </div>
+        <div class="service-row">
+          <span class="s-name">Video / Reel</span>
+          <span class="s-rate">$1,000–$2,500</span>
+        </div>
+        <div class="service-row">
+          <span class="s-name">Speaking Engagement</span>
+          <span class="s-rate">$2,500–$7,500</span>
+        </div>
+        <div class="service-row">
+          <span class="s-name">Brand Consulting / Advisory</span>
+          <span class="s-rate">$150–$250/hr</span>
+        </div>
+        <div class="service-row">
+          <span class="s-name">Tool Review or Audit Feature</span>
+          <span class="s-rate">$1,500–$3,000</span>
+        </div>
+        <div class="service-row">
+          <span class="s-name">Co-created Framework or Resource</span>
+          <span class="s-rate">$3,000–$7,500</span>
+        </div>
+      </div>
+      <p style="font-size:11px;color:var(--gray);margin-top:10px;">Rates reflect B2B tech and AI niche premium pricing. Bundle packages and retainer agreements available. All partnerships are editorially independent and disclosed transparently. Contact for custom packages.</p>
+    </div>
+
+    <!-- NEWSLETTER CALLOUT -->
+    <div class="full-width">
+      <div class="newsletter-callout">
+        <div>
+          <h3>The Documentation Engineer</h3>
+          <p>A weekly newsletter grading real AI companies A through F on their documentation ethics, with frameworks practitioners can use immediately. Published every Wednesday. Subscribers span documentation engineers, DevRel professionals, founders, and CTOs across 36 countries. Ideal for brands in AI tooling, developer education, SaaS, and compliance infrastructure.</p>
+        </div>
+        <div class="nl-stats">
+          <div>
+            <div class="nl-num">455</div>
+            <div class="nl-label">Subscribers</div>
+          </div>
+          <div>
+            <div class="nl-num">717</div>
+            <div class="nl-label">Followers</div>
+          </div>
+          <div>
+            <div class="nl-num">11,275%</div>
+            <div class="nl-label">Growth / 180 days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /body -->
+
+  <div style="padding-bottom: 32px;"></div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="f-name">Brittney Ball</div>
+    <div class="f-contact">
+      <a href="mailto:brittneyball.deved@gmail.com">brittneyball.deved@gmail.com</a><br>
+      <a href="https://technidox.dev">technidox.dev</a> &nbsp;·&nbsp;
+      <a href="https://briitoeknee.substack.com">The Documentation Engineer</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
