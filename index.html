@@ -27,14 +27,21 @@
     color: var(--black);
     font-size: 14px;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
   }
 
-  .page { width: 850px; margin: 0 auto; background: var(--white); }
+  .page {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: var(--white);
+  }
 
   /* HEADER */
   .header {
     background: var(--teal);
-    padding: 32px 56px 24px;
+    padding: 32px 72px 24px;
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 32px;
@@ -66,7 +73,7 @@
   /* CONTACT BAR */
   .contact-bar {
     background: var(--black);
-    padding: 11px 56px;
+    padding: 11px 72px;
     display: flex; gap: 24px; align-items: center; flex-wrap: wrap;
   }
   .contact-bar a, .contact-bar span {
@@ -77,7 +84,7 @@
 
   /* BODY */
   .body {
-    padding: 24px 56px 28px;
+    padding: 24px 72px 28px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 22px 40px;
@@ -305,7 +312,7 @@
 
   /* FOOTER */
   .footer {
-    background: var(--black); padding: 18px 56px;
+    background: var(--black); padding: 18px 72px;
     display: flex; justify-content: space-between; align-items: center;
   }
   .f-name { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--white); }
