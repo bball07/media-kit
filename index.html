@@ -37,12 +37,12 @@
   }
  
   .page {
-    width: 100vw;
-    max-width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background: var(--white);
-    overflow-x: hidden;
+    overflow: hidden;
   }
  
   /* HEADER */
@@ -53,6 +53,8 @@
     grid-template-columns: 1fr auto;
     gap: 32px;
     align-items: end;
+    box-sizing: border-box;
+    width: 100%;
   }
   .header-left h1 {
     font-family: 'DM Serif Display', serif;
@@ -82,6 +84,8 @@
     background: var(--black);
     padding: 11px 6%;
     display: flex; gap: 24px; align-items: center; flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
   }
   .contact-bar a, .contact-bar span {
     font-size: 11.5px; color: #A8D8DC; text-decoration: none; font-weight: 400;
@@ -95,6 +99,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 22px 40px;
+    box-sizing: border-box;
+    width: 100%;
   }
   .full-width { grid-column: 1 / -1; }
  
@@ -321,6 +327,8 @@
   .footer {
     background: var(--black); padding: 18px 6%;
     display: flex; justify-content: space-between; align-items: center;
+    box-sizing: border-box;
+    width: 100%;
   }
   .f-name { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--white); }
   .f-contact { font-size: 11px; color: #A8D8DC; text-align: right; line-height: 1.9; }
@@ -621,7 +629,7 @@
   </div><!-- /body -->
  
   <!-- BOTTOM SECTIONS: outside grid, full width with matching padding -->
-  <div style="padding: 0 6% 28px;">
+  <div style="padding: 0 6% 28px; box-sizing: border-box; width: 100%;">
  
     <!-- CREDENTIALS -->
     <div style="margin-bottom:22px;">
